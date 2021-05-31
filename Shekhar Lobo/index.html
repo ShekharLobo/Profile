@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<body>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+  <a href="#home" class="w3-button w3-bar-item">Home</a>
+  <a href="contact.html" class="w3-button w3-bar-item">Contact</a>
+  <a href="https://github.com/ShekharLobo" class="w3-button w3-bar-item">Projects</a>
+</nav>
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="tux.jpg"
+  style="width:100%">
+  <img class="mySlides" src="waterfall.jpg"
+  style="width:100%">
+  <img class="mySlides" src="sherlock.png"
+  style="width:100%">
+  <img class="mySlides" src="2face.png"
+  style="width:100%">
+  <img class="mySlides" src="https://images.hdqwalls.com/download/notorious-hacker-7i-3840x2400.jpg"
+  style="width:100%">
+</section>
+
+<!-- Band Description -->
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">Shekhar J. Lobo</h2>
+  <p class="w3-opacity"><i>AI/ML Geek</i></p>
+  <p class="w3-justify">I am a BSc.IT 2019 graduate. Lover of Python, Artificial Intelligence and Machine Learning. Smartworking, Honest and Enthusiat. I am a Nerd, so I am also into Movies, TV series and Novels.</p>
+</section>
+
+<!-- Band Members -->
+<section class="w3-row-padding w3-center w3-light-grey">
+  <article class="w3-third">
+    <p></p>
+    <img src="IMG-20191221-WA0005.jpg" alt="Random Name" style="width:100%">
+    <p>BSc.IT 2019 Graduate</p>
+  </article>
+  <article class="w3-third">
+    <p></p>
+    <img src="20171213_151958_LLS.jpg" alt="Random Name" style="width:100%">
+    <p>Movies, TV Series and Novel Fan</p>
+  </article>
+  <article class="w3-third">
+    <p></p>
+    <img src="waterfall2.jpg" alt="Random Name" style="width:100%">
+    <p>Love Travelling</p>
+  </article>
+</section>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+<!--  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>  -->
+  <a href="https://www.linkedin.com/in/shekhar-lobo-618a3a186"><i class="fa fa-linkedin"></i></a>
+  <a href="#"><i class="fa fa-instagram"></i></a>
+  <p class="w3-medium">
+  Powered by Lobo Industries
+  </p>
+  <img src="sketch-1551486869164~2.png" alt="Random Name" style="width:15%">
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
